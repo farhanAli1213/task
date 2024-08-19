@@ -1,0 +1,40 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "set NODE_ENV=development && nodemon server.js",
+    "start:prod": "cross-env NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js",
+    "test": "mocha 'test-cases/**/*.spec.js'",
+    "test-single": "mocha"
+  },
+  "author": "Farhan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.4.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "helmet": "^6.0.0",
+    "mocha": "^9.0.1",
+    "morgan": "^1.10.0",
+    "nock": "^13.5.4",
+    "node-cache": "^5.1.2",
+    "node-clover": "^0.0.5",
+    "nodemon": "^2.0.22",
+    "pluralize": "^8.0.0",
+    "square": "^35.0.0",
+    "utils": "^0.3.1",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "description": ""
+}
